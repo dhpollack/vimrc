@@ -1,0 +1,3 @@
+# ignore the vim temp files and folders
+view/
+.netrwhist
