@@ -1,6 +1,8 @@
 " Load system vimrc
 unlet! skip_defaults_vim
-source $VIMRUNTIME/defaults.vim
+if $VIMRUNTIME !~ "nvim"
+  source $VIMRUNTIME/defaults.vim
+endif
 
 " Buffer management
 set hidden
@@ -23,6 +25,9 @@ let g:syntastic_check_on_wq = 0
 let g:cargo_makeprg_params = 'build --offline'
 
 let g:syntastic_cpp_config_file = '.syntastic_cpp_config'
+let g:syntastic_c_compiler = 'gcc-8'
+let g:syntastic_cpp_compiler = 'g++-8'
+
 
 " add file types
 " Python, Python Shell Startup and Python Stub Files
