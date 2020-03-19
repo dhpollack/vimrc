@@ -25,3 +25,9 @@
 [submodule "pack/lang-plugins/start/rust.vim"]
 	path = pack/lang-plugins/start/rust.vim
 	url = https://github.com/rust-lang/rust.vim.git
+[submodule "pack/misc/start/vim-afterglow"]
+	path = pack/misc/start/vim-afterglow
+	url = https://github.com/danilo-augusto/vim-afterglow.git
+[submodule "pack/misc/start/Zenburn"]
+	path = pack/misc/start/Zenburn
+	url = https://github.com/jnurmine/Zenburn.git

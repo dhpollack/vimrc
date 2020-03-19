@@ -4,6 +4,13 @@ if $VIMRUNTIME !~ "nvim"
   source $VIMRUNTIME/defaults.vim
 endif
 
+" Enable Mouse with TERM=alacritty
+" https://stackoverflow.com/questions/7000960/in-vim-why-doesnt-my-mouse-work-past-the-220th-column
+set ttymouse=sgr
+
+" Color Scheme
+colorscheme afterglow
+
 " Buffer management
 set hidden
 nnoremap <C-N> :bnext<CR>
@@ -28,6 +35,7 @@ let g:syntastic_cpp_config_file = '.syntastic_cpp_config'
 let g:syntastic_c_compiler = 'gcc-8'
 let g:syntastic_cpp_compiler = 'g++-8'
 
+let g:syntastic_python_checkers = ['python', 'flake8']
 
 " add file types
 " Python, Python Shell Startup and Python Stub Files
