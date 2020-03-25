@@ -8,6 +8,11 @@ endif
 " https://stackoverflow.com/questions/7000960/in-vim-why-doesnt-my-mouse-work-past-the-220th-column
 set ttymouse=sgr
 
+" Options from Missing CS Semester
+set number
+set relativenumber
+set laststatus=2
+
 " Color Scheme
 colorscheme afterglow
 
