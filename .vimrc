@@ -13,13 +13,15 @@ set number
 set relativenumber
 set laststatus=2
 
+set statusline+=%F\ %l\:%c
+
 " Color Scheme
 colorscheme afterglow
 
 " Buffer management
 set hidden
-nnoremap <C-N> :bnext<CR>
 nnoremap <C-P> :bprev<CR>
+nnoremap <C-N> :bnext<CR>
 
 " Enable folding
 set foldmethod=indent
