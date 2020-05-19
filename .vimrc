@@ -51,3 +51,6 @@ au BufNewFile,BufRead *.py3  setf python
 
 " Clang-Format options
 let g:clang_format#code_style = "llvm"
+
+" tab length for go files
+autocmd FileType go setlocal tabstop=2 noexpandtab
